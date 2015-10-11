@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sharing</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <style type="text/css">
+  .flash
+{
+  position:absolute;
+  top:70px;
+  left:50px;
+  background-color: rgba(255,255,91,0.5);
+  font-size: 0.9em;
+  color: black;
+  padding: 30px;
+  border-radius: 5px;
+  
+}
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+    	<%= link_to "Family sharing", root_path, class: "navbar-brand" %>
+
+    </div>
+  </div>
+</nav>
+<% if notice.present? %>
+  <p class="flash"><strong><%= flash.notice %></strong></p> 
+<% end %>
+<%= yield %>
+
+
+</body>
+</html>
