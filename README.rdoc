@@ -1,3 +1,6 @@
 == README
 
 Application réalisée avec le framework ruby on rails qui permet le partage sécurisé de photos entre personnes. 
+L'application comprend une page d'administration où il est possible d'ajouter de nouveaux comptes utilisateurs.
+
+L'accès aux photos est sécurisé par authentification.
